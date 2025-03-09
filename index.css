@@ -19,6 +19,7 @@ body {
 
 button {
   font-family: 'Courier New', Courier, monospace;
+  min-width: 200px;
   padding: 0.3rem 1.2rem;
   color: blue;
   background-color: orange;

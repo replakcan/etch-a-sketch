@@ -1,5 +1,5 @@
 const eraserBtn = document.createElement('button')
-eraserBtn.textContent = 'eraser'.toUpperCase()
+eraserBtn.textContent = 'clear'.toUpperCase()
 
 eraserBtn.addEventListener('click', () => {
   const sketchDivs = [...document.querySelectorAll('.sketch-div')]

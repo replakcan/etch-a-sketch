@@ -1,3 +1,5 @@
+import { randomColorGenerator } from "./lib/random-color-generator.js"
+
 const body = document.querySelector('body')
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight

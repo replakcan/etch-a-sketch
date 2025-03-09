@@ -1,4 +1,4 @@
-import { randomColorGenerator } from "./lib/random-color-generator.js"
+import { randomRGBGenerator } from "./lib/random-color-generator.js"
 
 const body = document.querySelector('body')
 const windowWidth = window.innerWidth
@@ -32,9 +32,9 @@ const updateSketchBoard = (divWidth) => {
     div.addEventListener('mouseover', () => {
       if (div.style.backgroundColor) {
         opacity += 0.1
-        div.style.backgroundColor = randomColorGenerator(opacity)
+        div.style.backgroundColor = randomRGBGenerator(opacity)
       } else {
-        div.style.backgroundColor = randomColorGenerator(opacity)
+        div.style.backgroundColor = randomRGBGenerator(opacity)
       }
     })
 

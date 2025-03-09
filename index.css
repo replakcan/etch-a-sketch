@@ -51,6 +51,10 @@ button:active {
   text-align: center;
 }
 
-.btn {
+.btn-group {
+  display: flex;
+  gap: 1rem;
   padding: 1rem;
+  justify-content: center;
+  background-color: rgb(67, 55, 136);
 }

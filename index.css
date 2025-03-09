@@ -44,14 +44,12 @@ button:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: white;
 }
 
 .sketch-div {
   aspect-ratio: 1;
   border: solid;
   border-width: thin;
-  border-color: pink;
   text-align: center;
 }
 
@@ -60,5 +58,4 @@ button:active {
   gap: 1rem;
   padding: 1rem;
   justify-content: center;
-  background-color: rgb(67, 55, 136);
 }

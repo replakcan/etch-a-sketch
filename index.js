@@ -14,7 +14,7 @@ sketchDivContainer.classList.add('container')
 body.appendChild(btn)
 body.appendChild(sketchDivContainer)
 
-const divsOnOneSide = () => prompt('Type the desired grid number in widthwise (min: 0, max: 100)')
+const divsOnOneSide = () => prompt('Type the desired grid number in widthwise (min: 10, max: 100)')
 
 const updateSketchBoard = (divWidth) => {
   const longSide = Math.floor(windowWidth / divWidth)
@@ -57,7 +57,7 @@ btn.addEventListener('click', () => {
   let divCountOneSide
   do {
     divCountOneSide = divsOnOneSide()
-  } while (divCountOneSide > 100 || divCountOneSide < 0)
+  } while (divCountOneSide > 100 || divCountOneSide < 10)
 
   deletePreviousSetup()
   updateSketchBoard(windowWidth / divCountOneSide)

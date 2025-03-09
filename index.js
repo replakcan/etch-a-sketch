@@ -8,7 +8,7 @@ const sketchDivContainer = document.createElement('div')
 const btn = document.createElement('button')
 
 btn.classList.add('btn')
-btn.textContent = 'div amount per row on width'.toUpperCase()
+btn.textContent = 'click to set the amount of grids per row'.toUpperCase()
 sketchDivContainer.classList.add('container')
 
 body.appendChild(btn)

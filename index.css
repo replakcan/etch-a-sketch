@@ -13,6 +13,26 @@
 body {
   display: flex;
   flex-direction: column;
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.3rem 1.2rem;
+  color: blue;
+  background-color: orange;
+  border-color: darkblue;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: darkorange;
+  color: darkblue;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .container {

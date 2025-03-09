@@ -13,7 +13,6 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: darkgray;
 }
 
 .container {
@@ -21,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: white;
 }
 
 .sketch-div {
@@ -28,14 +28,9 @@ body {
   border: solid;
   border-width: thin;
   border-color: pink;
-  background-color: lemonchiffon;
   text-align: center;
 }
 
-.sketch-div:hover {
-  background-color: black;
-}
-
 .btn {
-    padding: 1rem;
+  padding: 1rem;
 }

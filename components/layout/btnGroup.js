@@ -1,5 +1,5 @@
-import eraserBtn from "../ui/eraserBtn.js"
-import gridSetterBtn from "../ui/gridSetterBtn.js"
+import eraserBtn from '../ui/eraserBtn.js'
+import gridSetterBtn from '../ui/gridSetterBtn.js'
 
 const btnGroup = document.createElement('div')
 btnGroup.classList.add('btn-group')

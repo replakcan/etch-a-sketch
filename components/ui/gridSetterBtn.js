@@ -1,11 +1,11 @@
-import askUserGridAmount from "../../lib/ask-user-grid-amount.js"
-import emptyGridSystem from "../../lib/empty-grid-system.js"
-import createGridSystem from "../../lib/grid-system-creator.js"
-import { randomRGBGenerator } from "../../lib/random-color-generator.js"
-import sketchGridContainer from "../layout/sketchGridContainer.js"
+import askUserGridAmount from '../../lib/ask-user-grid-amount.js'
+import emptyGridSystem from '../../lib/empty-grid-system.js'
+import createGridSystem from '../../lib/create-grid-system.js'
+import randomRGBGenerator from '../../lib/random-color-generator.js'
+import sketchGridContainer from '../layout/sketchGridContainer.js'
 
 const gridSetterBtn = document.createElement('button')
-gridSetterBtn.textContent = 'grids per row'.toUpperCase()
+gridSetterBtn.textContent = 'new grid'.toUpperCase()
 
 gridSetterBtn.addEventListener('click', () => {
   let divCountOneSide

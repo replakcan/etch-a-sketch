@@ -26,6 +26,18 @@ const updateSketchBoard = (divWidth) => {
     let div = document.createElement('div')
     div.classList.add('sketch-div')
     div.style.width = `${divWidth}px`
+
+    let opacity = 0.1
+
+    div.addEventListener('mouseover', () => {
+      if (div.style.backgroundColor) {
+        opacity += 0.1
+        div.style.backgroundColor = randomColorGenerator(opacity)
+      } else {
+        div.style.backgroundColor = randomColorGenerator(opacity)
+      }
+    })
+
     sketchDivContainer.appendChild(div)
   }
 }

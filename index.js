@@ -3,7 +3,6 @@ const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 
 const sketchDivContainer = document.createElement('div')
-const sketchDiv = document.createElement('div')
 const btn = document.createElement('button')
 
 btn.classList.add('btn')

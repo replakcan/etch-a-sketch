@@ -4,6 +4,8 @@ import createGridSystem from '../../lib/create-grid-system.js'
 import randomRGBGenerator from '../../lib/random-color-generator.js'
 import sketchGridContainer from '../layout/sketchGridContainer.js'
 
+const isParsedStringNaN = (str) => isNaN(str) && isNaN(parseFloat(str))
+
 const gridSetterBtn = document.createElement('button')
 gridSetterBtn.textContent = 'new grid'.toUpperCase()
 
@@ -11,7 +13,7 @@ gridSetterBtn.addEventListener('click', () => {
   let divCountOneSide
   do {
     divCountOneSide = askUserGridAmount()
-  } while (divCountOneSide > 100 || divCountOneSide < 10)
+  } while (isParsedStringNaN(divCountOneSide) || divCountOneSide > 100 || divCountOneSide < 10)
 
   emptyGridSystem(sketchGridContainer)
   createGridSystem(window.innerWidth / divCountOneSide, sketchGridContainer, randomRGBGenerator)

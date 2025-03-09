@@ -11,8 +11,11 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: rgb(202, 238, 220);
+}
 
 button {
   font-family: 'Courier New', Courier, monospace;
